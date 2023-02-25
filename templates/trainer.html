@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block content %}
+    {% if prof %}
+        <h2>Инженерные тренажёры</h2>
+        <img src="{{url_for('static', filename='img/Yt150-Freightner-Engeneer-Simulator.png')}}" alt="no img">
+    {% else %}
+        <h2>Научные симуляторы</h2>
+        <img src="{{url_for('static', filename='img/Yt150-Freightner-Science-Simulator.png')}}" alt="no img">
+    {%endif%}
+{% endblock %}
