@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+    {% if list_type == "ol" %}
+      <ol>
+        {%for job in jobs["jobs"]%}
+          <li>{{job}}</li>
+          {%endfor%}
+      </ol>
+    {% else %}
+        <ul>
+        {%for job in jobs["jobs"]%}
+          <li>{{job}}</li>
+          {%endfor%}
+      </ul>
+    {%endif%}
+{% endblock %}
